@@ -8,7 +8,7 @@
     "build": "rm -rf dist && vite build",
     "cap:sync": "cap sync android",
     "cap:build": "vite build && cap sync android",
-    "start": "node server.ts",
+    "start": "tsx server.ts",
     "preview": "vite preview",
     "lint": "tsc --noEmit"
   },

@@ -1472,15 +1472,12 @@ function drawTable() {
 
     // 4. 该玩家打出的所有牌展示区 (mini 卡牌整齐排列，点按可放大查阅)
     const playedList = seatPlayedCards[seatIdx] || [];
-    ctx.fillStyle = 'rgba(253, 230, 138, 0.85)';
-    ctx.font = '700 9px sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText('已出:', x + 8, y + 50);
 
     if (playedList.length === 0) {
       ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
       ctx.font = 'italic 9.5px sans-serif';
-      ctx.fillText('暂无出牌', x + 40, y + 50);
+      ctx.textAlign = 'left';
+      ctx.fillText('暂无出牌', x + 8, y + 50);
     } else {
       const cardMiniW = 28;
       const cardMiniH = 40;

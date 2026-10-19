@@ -429,7 +429,7 @@ if (fs.existsSync(distHtml)) {
   });
 }
 
-const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
 
 server.on('error', (err: any) => {
   if (err.code === 'EADDRINUSE') {
